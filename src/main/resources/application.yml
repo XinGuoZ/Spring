@@ -1,0 +1,22 @@
+# Server settings  
+server:  
+    port: 801
+
+    
+# SPRING PROFILES  
+spring:         
+    # HTTP ENCODING  
+    http:  
+        encoding.charset: UTF-8  
+        encoding.enable: true  
+        encoding.force: true  
+    mvc:
+        view.prefix: /jsp/
+        view.suffix: .jsp
+
+    # DATASOURCE  
+    datasource:  
+        driverClass: com.mysql.cj.jdbc.Driver  
+        url: jdbc:mysql:///info?useSSL=false&serverTimezone=UTC
+        username: root
+        password: sa
